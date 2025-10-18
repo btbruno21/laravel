@@ -21,8 +21,8 @@
       <td>{{ $at->descriptions  }}</td>
       <td>{{ $at->points  }}</td>
       <td>{{ $at->categories->name }}</td>
-      <td><a href="{{--route('category.edit', $at->id)--}}"><button type="button" class="btn btn-success">Editar</button></a></td>
-      <td><a href="{{--route('category.show', $at->id)--}}"><button type="button" class="btn btn-success">Mostrar</button></a></td>
+      <td><a href="{{route('action.edit', $at->id)}}"><button type="button" class="btn btn-success">Editar</button></a></td>
+      <td><a href="{{route('action.show', $at->id)}}"><button type="button" class="btn btn-success">Mostrar</button></a></td>
     </tr>
     @endforeach
   </tbody>

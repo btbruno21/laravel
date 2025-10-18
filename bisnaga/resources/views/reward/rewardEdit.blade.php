@@ -4,6 +4,16 @@
 @if(session()->has('message'))
 {{session()->get('message')}}
 @endif
+
+@if($errors->any())
+<div class="alert alert-danger">
+    <ul>
+        @foreach($errors->all() as $error)
+            <li>{{$error}}</li>
+        @endforeach
+    </ul>
+</div>
+@endif
 <form action="{{route('reward.update',  $reward->id)}}" method="POST" class="container mt-4">
     @csrf
     @method('PUT')

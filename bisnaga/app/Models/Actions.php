@@ -8,9 +8,9 @@ use App\Models\Categories;
 
 class Actions extends Model
 {
-    protected $filable = [
+    protected $fillable = [
         'title',
-        'description',
+        'descriptions',
         'category_id',
         'points'
     ];

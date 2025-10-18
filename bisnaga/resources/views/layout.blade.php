@@ -21,6 +21,8 @@
                 <li class="nav-item"><a href="{{route('category.create')}}" class="nav-link">Criar categoria</a></li>
                 <li class="nav-item"><a href="{{route('reward.index')}}" class="nav-link">Rewards</a></li>
                 <li class="nav-item"><a href="{{route('reward.create')}}" class="nav-link">Criar rewards</a></li>
+                <li class="nav-item"><a href="{{route('action.index')}}" class="nav-link">Ações</a></li>
+                <li class="nav-item"><a href="{{route('action.create')}}" class="nav-link">Criar ações</a></li>
             </ul>
         </header>
     </div>
